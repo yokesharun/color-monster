@@ -4,7 +4,7 @@ This is a Color matching website, Especially for Designers. My Site Name is Colo
 
 Home Page: 
 
-![alt tag](https://github.com/yokesharun/color-monster/blob/master/public/screenshots/create.png)
+![alt tag](https://github.com/yokesharun/color-monster/blob/master/public/screenshots/home.png)
 
 Create New color panel Page: 
 
