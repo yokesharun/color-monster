@@ -51,7 +51,22 @@
 		</div>
 	</div>
 	<div class="col-md-6">
-		<div class="create-panel"></div>
+		<div class="create-panel">
+			<div id="monster-inc">
+			  <div class="m">
+			    <div class="top"></div>
+			    <div class="bottom"></div>
+			    <div class="eye">
+			      <div class="up">
+			        <div class="iris"></div>
+			      </div>
+			      <div class="down">
+			        <div class="iris"></div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+		</div>
 	</div>
 </div>
 
