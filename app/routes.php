@@ -11,7 +11,10 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', array('as' => 'index', 'uses' => 'ColorController@index'));
+
+Route::get('/create', array('as' => 'create', 'uses' => 'ColorController@create'));
+
+Route::post('/create_process', array('as' => 'create_process', 'uses' => 'ColorController@create_process'));
+
+

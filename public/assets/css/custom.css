@@ -3,7 +3,7 @@ body{
 }
 .header{
 	text-align: center;
-	padding: 10px;
+	padding: 10px 10px 20px 10px;
 }
 .match-one{
 	color: #F35F5F;
@@ -19,7 +19,7 @@ body{
 }
 .canvas-item{
 	background-color: #ffffff;
-    margin: 10px;
+    margin: 10px 10px 25px 10px;
     border-radius: 8px;
     height: auto;
     border: none;
@@ -41,4 +41,13 @@ body{
 }
 .canvas-4{
 	height: 40px;
+}
+.nos-text{
+	text-align: center;
+	font-size: 18px;
+}
+.create-panel{
+	background-color: #ffffff;
+	padding: 15px;
+	border-radius: 8px;
 }
