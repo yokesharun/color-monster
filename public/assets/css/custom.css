@@ -29,6 +29,7 @@ body{
 .canvas{
 	border-radius: 8px;
 	padding: 20px;
+  cursor: pointer;
 }
 .canvas-1{
 	height: 70px;
