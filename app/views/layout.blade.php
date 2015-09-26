@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="{{asset('assets/css/custom.css')}}">
 
   <script type="text/javascript" src="{{asset('assets/js/jquery.min.js')}}"></script>
+  <script type="text/javascript" src="{{asset('assets/js/bootstrap.min.js')}}"></script>
 </head>
 <body>
 <nav class="navbar navbar-default">
