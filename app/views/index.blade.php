@@ -21,7 +21,7 @@
 			<div class="nos-text">#{{{$i}}}</div>
 			<div class="canvas-item">
 				<div class="canvas">
-				<h5>{{{$color->likes}}} Likes</h5>
+				<h5>{{{$color->likes}}} Likes <span class="time-ago">{{date('d M,Y',strtotime($color->created_at))}}</span></h5>
 						<div class="canvas-1" style="background-color:#{{{$color->color_1}}};"></div>
 						<div class="canvas-2" style="background-color:#{{{$color->color_2}}};"></div>
 						<div class="canvas-3" style="background-color:#{{{$color->color_3}}};"></div>
