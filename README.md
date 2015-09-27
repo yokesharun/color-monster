@@ -1,4 +1,4 @@
-# color-monster
+# Color Monster
 
 This is a Color matching website, Especially for Designers. My Site Name is Color Monster and each of the set of colors are called as monsters
 
