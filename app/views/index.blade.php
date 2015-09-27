@@ -18,7 +18,7 @@
 		<?php $i=$colors->count(); ?>
 		@foreach($colors as $color)
 		<div class="col-md-4">
-			<div class="nos-text">#{{{$i}}}</div>
+			<!-- <div class="nos-text">#{{{$i}}}</div> -->
 			<div class="canvas-item">
 				<div class="canvas">
 				<h5>{{{$color->likes}}} Likes <span class="time-ago">{{date('d M,Y',strtotime($color->created_at))}}</span></h5>
