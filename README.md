@@ -10,6 +10,13 @@ Project is based on PHP Laravel framework. along with bootstrap paper design fra
 * update the composer using
 
 ` composer update `
+
+* create a new database with any name
+* configure the database with the laravel app/config/database.php
+* migrate the project tables
+
+`php artisan migrate`
+
 * run the project using
 
 ` php artisan serve`
