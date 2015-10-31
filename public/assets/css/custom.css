@@ -298,4 +298,51 @@ body{
 }
 
 
+/* chart css */
 
+.chart{
+  border: solid thin silver;
+  width: 385px;
+  height: 350px;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+.column{
+  width: 80px;
+  height: 100%;
+  margin: 2px 5px;
+  float: left;
+  position: relative;
+}
+
+.column .fill{
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.label{
+  text-align: center;
+}
+.column-container{
+  height: 320px;
+}
+
+
+
+.column:nth-child(1) .fill{
+    height: 40%;
+    border:1px solid #bebebe;
+  }
+  .column:nth-child(2) .fill{
+    height: 70%;
+    border:1px solid #bebebe;
+  }
+  .column:nth-child(3) .fill{
+    height: 50%;
+    border:1px solid #bebebe;
+  }
+  .column:nth-child(4) .fill{
+    height: 90%;
+    border:1px solid #bebebe;
+  }
