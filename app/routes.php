@@ -17,4 +17,4 @@ Route::get('/create', array('as' => 'create', 'uses' => 'ColorController@create'
 
 Route::post('/create_process', array('as' => 'create_process', 'uses' => 'ColorController@create_process'));
 
-
+Route::post('/color-vote', array('as' => 'color-vote', 'uses' => 'ColorController@vote_color'));

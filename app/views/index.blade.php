@@ -21,7 +21,7 @@
 			<!-- <div class="nos-text">#{{{$i}}}</div> -->
 			<div class="canvas-item">
 				<div class="canvas">
-				<h5>{{{$color->likes}}} Likes <span class="time-ago">{{date('d M,Y',strtotime($color->created_at))}}</span></h5>
+				<h5><a href="javascript:void(0);" onclick="add_vote({{$color->id}})" class="btn btn-default btn-sm"><span id="span_{{$color->id}}" class="badge">{{{get_count($color->id)}}}</span> Like</a> <span class="time-ago">{{date('d M,Y',strtotime($color->created_at))}}</span></h5>
 						<a data-toggle="modal" data-target="#model_{{$i}}">
 						<div class="canvas-1" style="background-color:#{{{$color->color_1}}};"></div>
 						<div class="canvas-2" style="background-color:#{{{$color->color_2}}};"></div>
@@ -41,7 +41,26 @@
 		        <h4 class="modal-title" id="myModalLabel">Modal title {{$i}}</h4>
 		      </div>
 		      <div class="modal-body">
-		        ...
+		        <div class="chart">
+					<div class="column-container">
+						<div class="column">
+							<div class="fill" style="background:#{{$color->color_1}}"></div>
+							<p class="rotulo">#{{$color->color_1}}</p>
+						</div>
+						<div class="column">
+							<div class="fill" style="background:#{{$color->color_2}}"></div>
+							<p class="rotulo">#{{$color->color_2}}</p>
+						</div>
+						<div class="column">
+							<div class="fill" style="background:#{{$color->color_3}}"></div>
+							<p class="rotulo">#{{$color->color_3}}</p>
+						</div>
+						<div class="column">
+							<div class="fill" style="background:#{{$color->color_4}}"></div>
+							<p class="rotulo">#{{$color->color_4}}</p>
+						</div>
+					</div>
+				</div>
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -55,7 +74,10 @@
 
 	</div>
 
+<script type="text/javascript">
 
+	var url = "{{route('color-vote')}}";
 
+	</script>
 
 @stop

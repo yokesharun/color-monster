@@ -17,3 +17,11 @@ function color(monster){
 		$('.eye .down .iris').css('background-color', color_val);
 	}
 }
+
+
+function add_vote(color_id){
+	$.post( url, { color_id: color_id})
+  .done(function( data ) {
+    $('#span_'+data.color_id).text(data.vote);
+      });
+}

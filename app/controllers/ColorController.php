@@ -36,4 +36,35 @@ class ColorController extends BaseController {
 
 	}
 
+		public function vote_color()
+	{
+
+		$color_id = Input::get('color_id');
+
+			if($color_id != ""){
+				$host_ip = gethostbyname($_SERVER['SERVER_NAME']);
+				$ip_count = Love::where('ip_address',$host_ip)->where('color_id',$color_id)->count();
+				if($ip_count == 0)	{
+					$votes = new Love;
+					$votes->color_id = $color_id;
+					$votes->vote = 1;
+					$votes->ip_address = $host_ip;
+					$votes->save();
+				}
+				$count = Love::where('color_id',$color_id)->sum('vote');
+				$response_array = array('success' => true,'color_id' => $color_id, 'vote' => $count);
+				$response_code = 200;						
+
+			}else{
+		
+				$response_array = array('success' => false,'error' => 'Color not found', 'error_code' => 415);
+				$response_code = 200;
+		
+			}
+			// SERVER_ADDR
+
+		$response = Response::json($response_array, $response_code);
+		return  $response;
+	}
+
 }

@@ -88,3 +88,8 @@ Route::filter('csrf', function()
 		throw new Illuminate\Session\TokenMismatchException;
 	}
 });
+
+function get_count($color_id){
+	$count = Love::where('color_id',$color_id)->sum('vote');
+	return $count;
+}
