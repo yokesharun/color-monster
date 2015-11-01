@@ -21,7 +21,7 @@
 			<!-- <div class="nos-text">#{{{$i}}}</div> -->
 			<div class="canvas-item">
 				<div class="canvas">
-				<h5><a href="javascript:void(0);" onclick="add_vote({{$color->id}})" class="btn btn-default btn-sm"><span id="span_{{$color->id}}" class="badge">{{{get_count($color->id)}}}</span> Like</a> <span class="time-ago">{{date('d M,Y',strtotime($color->created_at))}}</span></h5>
+				<h5><a href="javascript:void(0);" onclick="add_vote({{$color->id}})" class="btn btn-primary btn-sm"><span id="span_{{$color->id}}" class="badge">{{{get_count($color->id)}}}</span> Like</a> <span class="time-ago">{{date('d M,Y',strtotime($color->created_at))}}</span></h5>
 						<a data-toggle="modal" data-target="#model_{{$i}}">
 						<div class="canvas-1" style="background-color:#{{{$color->color_1}}};"></div>
 						<div class="canvas-2" style="background-color:#{{{$color->color_2}}};"></div>
