@@ -15,7 +15,12 @@
 @endif
 
 	<div class="row">
-		<?php $i=$colors->count(); ?>
+		<?php if($page == "top")
+		{
+			$i= 10;
+		}else{
+			$i=$colors->count();
+		}?>
 		@foreach($colors as $color)
 		<div class="col-md-4">
 			<!-- <div class="nos-text">#{{{$i}}}</div> -->

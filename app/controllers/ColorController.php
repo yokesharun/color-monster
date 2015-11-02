@@ -7,6 +7,18 @@ class ColorController extends BaseController {
 		return View::make('index')->withPage('home')->withColors($colors);
 	}
 
+	public function top(){
+		$colors = 
+		DB::table('color')
+        ->leftJoin('love', 'love.color_id', '=', 'color.id')
+        ->where('color.approved',0)
+        ->orderBy('love.vote','desc')
+        ->take(10)
+        ->get();
+
+		return View::make('index')->withPage('top')->withColors($colors);
+	}
+
 	public function create(){
 		return View::make('create')->withPage('create');
 	}

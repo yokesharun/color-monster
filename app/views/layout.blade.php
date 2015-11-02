@@ -26,6 +26,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li id="home"><a href="{{route('index')}}">Home <span class="sr-only">(current)</span></a></li>
         <li id="create"><a href="{{route('create')}}">Create New Monster</a></li>
+        <li id="top"><a href="{{route('top')}}">Top 10 Monsters</a></li>
       </ul>
     </div>
   </div>
