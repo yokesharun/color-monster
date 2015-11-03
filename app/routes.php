@@ -20,3 +20,7 @@ Route::get('/top', array('as' => 'top', 'uses' => 'ColorController@top'));
 Route::post('/create_process', array('as' => 'create_process', 'uses' => 'ColorController@create_process'));
 
 Route::post('/color-vote', array('as' => 'color-vote', 'uses' => 'ColorController@vote_color'));
+
+// admin login
+
+Route::get('/login', array('as' => 'login', 'uses' => 'AdminController@login'));
