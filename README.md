@@ -1,6 +1,6 @@
-# Color Monster - Color theme matcher
+# Color Monster - Beautiful Color Palette
 
-This is a Color matching website, Especially for Designers. My Site Name is Color Monster and each of the set of colors are called as monsters
+This is a Color matching website, Especially for Designers. My Site Name is Color Monster and each of the set of colors are called as monsters. Inspired from the Website [Color Hunt](http://colorhunt.co/).
 
 Project is based on PHP Laravel framework. along with bootstrap paper design framework
 
