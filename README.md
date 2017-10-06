@@ -27,7 +27,7 @@ Developed and maintained by [Arun Yokesh](https://www.facebook.com/ayokesh).
 
 ## About
 
-SimpleImage is developed and maintained by [Arun Yokesh](https://www.facebook.com/ayokesh).
+Color Monster is developed and maintained by [Arun Yokesh](https://www.facebook.com/ayokesh).
 
 Contributions are appreciated!
 
